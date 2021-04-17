@@ -5,16 +5,19 @@ def q1
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
+  names.push("斎藤")
 
 end
+puts q1
 
 def q2
   array1 = ["dog", "cat", "fish"]
   array2 = ["bird", "bat", "tiger"]
-
   # 以下に回答を記載
-
+  array = array1 + array2
 end
+
+puts q2
 
 def q3
   numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9]
@@ -22,6 +25,10 @@ def q3
   # 以下に回答を記載
 
 end
+
+puts q3.count(3)
+
+#########4/18 ここまで終了############
 
 def q4
   sports = ["サッカー", "フットサル", nil, "野球", "バスケ", nil, "バレー"]
