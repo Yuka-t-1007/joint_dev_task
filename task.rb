@@ -91,8 +91,8 @@ def q10
   foods = %w(いか たこ うに しゃけ うにぎり うに軍艦 うに丼)
 
   # 以下に回答を記載
-  foods.each do |i|
-    if i.include?("うに")
+  foods.each do |food|
+    if food.include?("うに")
       puts "好物です"
     else
       puts "まぁまぁ好きです"
@@ -105,8 +105,7 @@ def q11
   sports = ["サッカー", "バスケ", "野球", ["フットサル", "野球"], "水泳", "ハンドボール", ["卓球", "サッカー", "ボルダリング"]]
   
   # 以下に回答を記載
-  sports.flatten!
-  sports.uniq!
+  sports.flatten!.uniq!
   sports.each.with_index(1) do |name,i|
     puts "No#{i} #{name}"
   end
